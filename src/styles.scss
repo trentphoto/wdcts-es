@@ -1,0 +1,28 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+button {
+  border: 1px white;
+  border-radius: 25px;
+  background-color: lightgray;
+  padding: 5px 30px;
+}
+

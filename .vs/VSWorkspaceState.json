@@ -4,11 +4,8 @@
     "\\e2e",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\app-form",
-    "\\src\\app\\login-page",
-    "\\src\\app\\new-account",
     "\\src\\app\\test-stepper"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\test-stepper\\test-stepper.component.html",
   "PreviewInSolutionExplorer": false
 }

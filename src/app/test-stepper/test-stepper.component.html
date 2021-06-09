@@ -10,80 +10,80 @@
           <div class="card-body">
 
             <mat-horizontal-stepper [linear]="isLinear" #stepper>
-              <mat-step [stepControl]="firstFormGroup">
+              <mat-step [stepControl]="firstFormGroup" (submit)="submit()">
                 <form [formGroup]="firstFormGroup">
                   <ng-template matStepLabel style="font-size:20px">Personal Infromation </ng-template>
                   <mat-form-field style="padding-right: 10px;">
                     <mat-label>First Name</mat-label>
-                    <input matInput placeholder="First name" formControlName="firstCtrl" required>
+                    <input matInput placeholder="First name" formControlName="firstName" required>
                   </mat-form-field>
 
                   <mat-form-field style="padding-right: 10px;">
                     <mat-label>Middle Name</mat-label>
-                    <input matInput placeholder="Middle name" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Middle name" formControlName="middleName" required>
                   </mat-form-field>
 
                   <mat-form-field>
                     <mat-label>Last Name</mat-label>
-                    <input matInput placeholder="Last name" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Last name" formControlName="lastName" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Email</mat-label>
-                    <input matInput placeholder="Email" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Email" formControlName="email" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Date of Birth</mat-label>
-                    <input matInput [matDatepicker]="picker" required>
+                    <input matInput formControlName="DOB" [matDatepicker]="picker" required>
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Gender</mat-label>
-                    <mat-select required>
-                      <mat-option value="one" required>Male </mat-option>
-                      <mat-option value="two" required>Female</mat-option>
+                    <mat-select formControlName="gender" required>
+                      <mat-option value="Male" required>Male </mat-option>
+                      <mat-option value="Female" required>Female</mat-option>
                     </mat-select>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Occupation</mat-label>
-                    <input matInput placeholder="Occupation" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Occupation" formControlName="occupation" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Marital Status</mat-label>
-                    <mat-select required>
-                      <mat-option value="one" required>Married </mat-option>
-                      <mat-option value="two" required>Single</mat-option>
+                    <mat-select formControlName="maritalStatus" required>
+                      <mat-option value="Married" required>Married </mat-option>
+                      <mat-option value="Single" required>Single</mat-option>
                     </mat-select>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label> Address </mat-label>
-                    <input matInput placeholder="1 Main St" formControlName="firstCtrl" required>
+                    <input matInput placeholder="1 Main St" formControlName="addressOne" required>
                   </mat-form-field> <br />
 
-                  <mat-form-field class="inputClass" >
+                  <mat-form-field class="inputClass">
                     <mat-label> Address line 2 </mat-label>
-                    <input class ="input" matInput placeholder="Aprt 1" formControlName="firstCtrl" required>
+                    <input class="input" matInput placeholder="Aprt 1" formControlName="addressTwo" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label> City </mat-label>
-                    <input matInput placeholder="Arlington / Town" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Arlington / Town" formControlName="city" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label> Zip Code </mat-label>
-                    <input matInput placeholder="Zip / Postal Code" formControlName="firstCtrl" required>
+                    <input matInput placeholder="Zip / Postal Code" formControlName="zipCode" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
                     <mat-label>Country</mat-label>
-                    <mat-select required>
+                    <mat-select formControlName="country" required>
                       <mat-option value="" selected="selected">(please select a country)</mat-option>
                       <mat-option value="AF">Afghanistan</mat-option>
                       <mat-option value="AL">Albania</mat-option>
@@ -326,9 +326,9 @@
                       <mat-option value="ZW">Zimbabwe</mat-option>
                     </mat-select>
                   </mat-form-field> <br />
-
                   <div>
                     <button mat-button matStepperNext>Next</button>
+                    <button mat-raised-button color="primary" type="submit" (click)="submit()">submit</button>
                   </div>
                 </form>
               </mat-step>

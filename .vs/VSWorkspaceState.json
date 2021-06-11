@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\e2e",
     "\\src",
     "\\src\\app",
     "\\src\\app\\test-stepper"
   ],
-  "SelectedNode": "\\src\\app\\test-stepper\\test-stepper.component.html",
+  "SelectedNode": "\\src\\app\\test-stepper\\test-stepper.component.ts",
   "PreviewInSolutionExplorer": false
 }

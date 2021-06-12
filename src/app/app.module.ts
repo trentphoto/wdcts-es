@@ -24,6 +24,7 @@ import { MatCardModule} from '@angular/material/card';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { PolicyListComponent } from './policy-list/policy-list.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     NewAccountComponent,
     LoginPageComponent,
     AppFormComponent,
-    TestStepperComponent
+    TestStepperComponent,
+    PolicyListComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     MatSelectModule,
     MatCardModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
+    AngularFirestoreModule
   ],
   providers: [{
     provide: MAT_RADIO_DEFAULT_OPTIONS,

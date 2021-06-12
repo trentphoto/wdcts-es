@@ -20,7 +20,11 @@ import { MatRadioModule, MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/rad
 import { TestStepperComponent } from './test-stepper/test-stepper.component' 
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSelectModule } from '@angular/material/select';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule} from '@angular/material/card';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 @NgModule({
   declarations: [
@@ -53,14 +57,9 @@ import {MatCardModule} from '@angular/material/card';
     MatRadioModule,
     MatStepperModule,
     MatSelectModule,
-    MatCardModule
-    
-    
-   
-
-
-    
-
+    MatCardModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
   ],
   providers: [{
     provide: MAT_RADIO_DEFAULT_OPTIONS,

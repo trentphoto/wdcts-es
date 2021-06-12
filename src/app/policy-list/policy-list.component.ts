@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Policy } from '../policy.model';
+import { ReactiveFormsModule } from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 import { PolicyService } from '../policy.service';
+
 
 @Component({
   selector: 'app-policy-list',
@@ -8,29 +10,37 @@ import { PolicyService } from '../policy.service';
   styleUrls: ['./policy-list.component.css']
 })
 export class PolicyListComponent implements OnInit {
+  constructor(public ordersService: PolicyService) { }
 
-  policies: Policy[];
-  constructor(private policyService: PolicyService) { }
+  ngOnInit() { }
 
-  ngOnInit() {
-    this.policyService.getPolicies().subscribe(data => {
-      this.policies = data.map(e => {
-        return {
-          id: e.payload.doc.id,
-        } as Policy;
-      })
+  coffees = [
+    "Americano",
+    "Flat White",
+    "Cappuccino",
+    "Latte",
+    "Espresso",
+    "Machiato",
+    "Mocha",
+    "Hot Chocolate",
+    "Tea"
+  ];
+
+  coffeeOrder = [];
+
+  addCoffee = coffee => this.coffeeOrder.push(coffee);
+
+  removeCoffee = coffee => {
+    let index = this.coffeeOrder.indexOf(coffee);
+    if (index > -1) this.coffeeOrder.splice(index, 1);
+  };
+
+  onSubmit() {
+    this.ordersService.form.value.coffeeOrder = this.coffeeOrder;
+    let data = this.ordersService.form.value;
+
+    this.ordersService.createCoffeeOrder(data).then(res => {
+      /*do something here....maybe clear the form or give a success message*/
     });
-  }
-
-  create(policy: Policy){
-      this.policyService.createPolicy(policy);
-  }
-
-  update(policy: Policy) {
-    this.policyService.updatePolicy(policy);
-  }
-
-  delete(id: string) {
-    this.policyService.deletePolicy(id);
   }
 }

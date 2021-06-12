@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\policy-list",
     "\\src\\app\\test-stepper"
   ],
-  "SelectedNode": "\\src\\app\\test-stepper\\test-stepper.component.ts",
+  "SelectedNode": "\\src\\app\\policy.service.ts",
   "PreviewInSolutionExplorer": false
 }

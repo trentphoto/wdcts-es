@@ -25,7 +25,6 @@ export class PolicyService {
     zipCode: new FormControl(""),
     country: new FormControl(""),
     churchAttendance: new FormControl(""),
-    churchAffiliation: new FormControl(""),
     ChurchName: new FormControl(""),
     churchLeadership: new FormControl(""),
     churchSize: new FormControl(""),
@@ -35,9 +34,6 @@ export class PolicyService {
     attendanceLength: new FormControl(""),
   });
 
-  formPageTwo = new  FormGroup({
-    
-  })
 
   //Firestore CRUD actions example
   createZtsForms(data) {

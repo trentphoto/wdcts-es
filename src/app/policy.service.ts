@@ -7,39 +7,63 @@ import { AngularFirestore } from "@angular/fire/firestore";
 })
 export class PolicyService {
   constructor(private firestore: AngularFirestore) { }
+  isLinear = false;
+
 
   form = new FormGroup({
-    customerName: new FormControl(""),
-    orderNumber: new FormControl(""),
-    coffeeOrder: new FormControl(""),
-    completed: new FormControl(false)
+    firstName: new FormControl(""),
+    middleName: new FormControl(""),
+    lastName: new FormControl(""),
+    email: new FormControl(""),
+    DOB: new FormControl(""),
+    gender: new FormControl(""),
+    occupation: new FormControl(""),
+    maritalStatus: new FormControl(""),
+    addressOne: new FormControl(""),
+    addressTwo: new FormControl(""),
+    city: new FormControl(""),
+    zipCode: new FormControl(""),
+    country: new FormControl(""),
+    churchAttendance: new FormControl(""),
+    churchAffiliation: new FormControl(""),
+    ChurchName: new FormControl(""),
+    churchLeadership: new FormControl(""),
+    churchSize: new FormControl(""),
+    churchRole: new FormControl(""),
+    countryTwo: new FormControl(""),
+    cityTwo: new FormControl(""),
+    attendanceLength: new FormControl(""),
   });
 
+  formPageTwo = new  FormGroup({
+    
+  })
+
   //Firestore CRUD actions example
-  createCoffeeOrder(data) {
+  createZtsForms(data) {
     return new Promise<any>((resolve, reject) => {
       this.firestore
-        .collection("coffeeOrders")
+        .collection("zts-forms")
         .add(data)
         .then(res => { }, err => reject(err));
     });
   }
 
-  updateCoffeeOrder(data) {
-    return this.firestore
-      .collection("coffeeOrders")
-      .doc(data.payload.doc.id)
-      .set({ completed: true }, { merge: true });
-  }
+  // updateCoffeeOrder(data) {
+  //   return this.firestore
+  //     .collection("coffeeOrders")
+  //     .doc(data.payload.doc.id)
+  //     .set({ completed: true }, { merge: true });
+  // }
 
-  getCoffeeOrders() {
-    return this.firestore.collection("coffeeOrders").snapshotChanges();
-  }
+  // getCoffeeOrders() {
+  //   return this.firestore.collection("coffeeOrders").snapshotChanges();
+  // }
 
-  deleteCoffeeOrder(data) {
-    return this.firestore
-      .collection("coffeeOrders")
-      .doc(data.payload.doc.id)
-      .delete();
-  }
+  // deleteCoffeeOrder(data) {
+  //   return this.firestore
+  //     .collection("coffeeOrders")
+  //     .doc(data.payload.doc.id)
+  //     .delete();
+  // }
 }

@@ -1,0 +1,34 @@
+.header {
+    width: 100%;
+    padding: 20px;
+    background: #244F6F;
+    color: white;
+}
+
+.header a {
+    color: white;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    padding: 20px;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    opacity: .7;
+}
+.header-link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 100px;
+}
+

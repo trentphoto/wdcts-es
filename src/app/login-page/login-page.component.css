@@ -1,0 +1,47 @@
+.login-page-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-page-left {
+    width: 50%;
+    background-color: #1e255b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    color: white;
+}
+
+.login-page-logo {
+    width: 200px;
+}
+
+.login-page-left-title {
+  font-size: 3em;
+}
+
+.login-page-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.login-page-right-form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.GmailButton {
+    margin-top: 30px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    padding: 15px 60px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+}

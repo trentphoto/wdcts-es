@@ -8,7 +8,7 @@ import { PolicyListComponent } from './policy-list/policy-list.component';
 import { TestStepperComponent } from './test-stepper/test-stepper.component';
 
 const routes: Routes = [
-  { path: 'new-account', component: NewAccountComponent },
+  { path: '', component: NewAccountComponent },
   { path: 'login-page', component: LoginPageComponent },
   { path: 'home-page', component: AppComponent },
   { path: 'app-form', component: AppFormComponent },

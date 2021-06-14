@@ -1,46 +1,57 @@
 
-<form class="text-center border border-light p-5">
-
-  <p class="h4 mb-4">
-    Welcome
-  </p>
-
-  <!-- Social login -->
-  <p>Sign in with:</p>
-
-  <a type="button" class="light-blue-text mx-5">
-    <mdb-icon fab icon="facebook-f" size="3x"></mdb-icon>
-  </a>
-  <a type="button" class="light-blue-text mx-5">
-    <mdb-icon fab icon="instagram" size="3x"></mdb-icon>
-  </a>
-  <a type="button" class="light-blue-text mx-5">
-    <mdb-icon fab icon="google" size="3x"></mdb-icon>
-  </a>
-
-  <p style="padding-top:20px;"> -Or Enter Email and Password- </p>
-
-  <!-- Email -->
-  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-  <!-- Password -->
-  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-
-  <div class="d-flex justify-content-around">
-    <div>
-      <!-- Remember me -->
-      <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+<div class="login-page-wrapper">
+  <div class="login-page-left">
+    <div class="login-page-left-logo">
+      <img src="/assets/full-white.svg" alt="WDCTS logo" class="login-page-logo">
     </div>
-    <div>
-      <!-- Forgot password -->
-      <a href="">Forgot password?</a>
+    <div class="login-page-left-title-wrap">
+      <h1 class="login-page-left-title h1">Welcome Back</h1>
+    </div>
+    <div class="login-page-left-text">
+      <p>Complete your application for Washington DC Theological Seminary today</p>
     </div>
   </div>
+  <div class="login-page-right">
 
-  <!-- Sign in button -->
-  <button mdbBtn color="info" class="my-4" type="submit">Sign in</button>
+    <form class="text-center border border-light p-5">
+    
+      <div class="row">
+        <div class="col-12 login-page-right-form-content">
+          
+          <p class="h4 mb-4">Welcome</p>
+          
+          <!-- Email -->
+          <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+          
+          <!-- Password -->
+          <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+          
+            <!-- Remember me -->
+          <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+          
+            <!-- Forgot password -->
+          <a href="">Forgot password?</a>
+          
+          <!-- Sign in button -->
+          <button mdbBtn color="info" class="my-4" type="submit">Sign in</button>
+          <a class="my-4 GmailButton">Sign in with Gmail</a>
+        
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-12">
 
-  <!-- Register -->
-  <p>Not a member? </p>
+        </div>
 
-</form>
+      </div>
+    
+
+      <!-- Register -->
+      <p><a href="/">Create an account</a></p>
+    
+    </form>
+
+  </div>
+</div>
+

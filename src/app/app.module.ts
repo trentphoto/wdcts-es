@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CheckboxModule, WavesModule, ButtonsModule, IconsModule,  } from 'angular-bootstrap-md';
-import { NewAccountComponent } from './new-account/new-account.component'
+import { HomeComponent } from './home/home.component'
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppFormComponent } from './app-form/app-form.component';
@@ -30,7 +30,7 @@ import { PolicyListComponent } from './policy-list/policy-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NewAccountComponent,
+    HomeComponent,
     LoginPageComponent,
     AppFormComponent,
     TestStepperComponent,

@@ -6,6 +6,6 @@
     "\\src\\app\\policy-list",
     "\\src\\app\\test-stepper"
   ],
-  "SelectedNode": "\\src\\app\\policy.service.ts",
+  "SelectedNode": "\\src\\app\\policy-list\\policy-list.component.html",
   "PreviewInSolutionExplorer": false
 }

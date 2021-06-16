@@ -32,6 +32,10 @@ export class PolicyService {
     countryTwo: new FormControl(""),
     cityTwo: new FormControl(""),
     attendanceLength: new FormControl(""),
+    statementPurpose: new FormControl(""),
+    internetAccess: new FormControl(""),
+    refferencePoint: new FormControl(""),
+    anyoneStudyingNow: new FormControl(""),
   });
 
 

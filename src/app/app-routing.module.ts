@@ -8,6 +8,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { HomeComponent } from './home/home.component';
 import { PolicyListComponent } from './policy-list/policy-list.component';
 import { TestStepperComponent } from './test-stepper/test-stepper.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // A1
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'home-page', component: AppComponent },
   { path: 'app-form', component: AppFormComponent },
   { path: 'stepper-form', component: TestStepperComponent },
-  { path: 'policy', component: PolicyListComponent}
+  { path: 'policy', component: PolicyListComponent },
+  { path: 'thank-you', component: ThankYouComponent }
 ];
 
 @NgModule({

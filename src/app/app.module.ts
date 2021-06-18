@@ -25,6 +25,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { PolicyListComponent } from './policy-list/policy-list.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { PolicyListComponent } from './policy-list/policy-list.component';
     LoginPageComponent,
     AppFormComponent,
     TestStepperComponent,
-    PolicyListComponent
+    PolicyListComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,

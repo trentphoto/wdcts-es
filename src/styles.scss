@@ -1,6 +1,5 @@
-@import "~@angular/material/theming";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@include mat-core();
 html,
 body {
     height: 100%;

@@ -17,6 +17,9 @@ export class PolicyService {
     email: new FormControl(""),
     DOB: new FormControl(""),
     gender: new FormControl(""),
+    ethnicDetail: new FormControl(""),
+    ethnic: new FormControl(""),
+    specialAccomidations: new FormControl(""),
     occupation: new FormControl(""),
     maritalStatus: new FormControl(""),
     addressOne: new FormControl(""),
@@ -36,6 +39,7 @@ export class PolicyService {
     internetAccess: new FormControl(""),
     refferencePoint: new FormControl(""),
     anyoneStudyingNow: new FormControl(""),
+    yearsOfBeingABeliever: new FormControl("")
   });
 
 

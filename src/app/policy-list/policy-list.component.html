@@ -11,13 +11,14 @@
                         <mat-horizontal-stepper [linear]="isLinear" #stepper>
                             <mat-step [stepControl]="this.ordersService.form">
                                 <form [formGroup]="this.ordersService.form">
-                                    <ng-template matStepLabel style="font-size:20px">Personal Infromation </ng-template>
-                                    <mat-form-field style="padding-right: 10px;">
+                                    <ng-template matStepLabel style="font-size:25px">Personal Infromation </ng-template>
+
+                                    <mat-form-field style="padding-right: 20px;">
                                         <mat-label>First Name</mat-label>
                                         <input matInput placeholder="First name" formControlName="firstName" required>
                                     </mat-form-field>
 
-                                    <mat-form-field style="padding-right: 10px;">
+                                    <mat-form-field style="padding-right: 20px;">
                                         <mat-label>Middle Name</mat-label>
                                         <input matInput placeholder="Middle name" formControlName="middleName" required>
                                     </mat-form-field>
@@ -97,13 +98,30 @@
                                     </mat-form-field> <br />
 
                                     <mat-form-field class="inputClass">
-                                        <mat-label> Zip Code </mat-label>
-                                        <input matInput placeholder="Zip / Postal Code" formControlName="zipCode" required>
+                                        <mat-label> State </mat-label>
+                                        <input matInput placeholder="State" formControlName="state" required>
                                     </mat-form-field> <br />
 
                                     <mat-form-field class="inputClass">
-                                        <mat-label>Country</mat-label>
+                                        <mat-label>Current Country of Residence</mat-label>
                                         <mat-select formControlName="country" required>
+                                            <mat-option value="" selected="selected">(please select a country)</mat-option>
+                                            <mat-option value="BZ">Belize</mat-option>
+                                            <mat-option value="CL">Chile</mat-option>
+                                            <mat-option value="DM">Dominica</mat-option>
+                                            <mat-option value="DO">Dominican Republic</mat-option>
+                                            <mat-option value="GY">Guyana</mat-option>
+                                            <mat-option value="NI">Nicaragua</mat-option>
+                                            <mat-option value="PA">Panama</mat-option>
+                                            <mat-option value="PE">Peru</mat-option>
+                                            <mat-option value="US">United States</mat-option>
+                                            <mat-option value="UY">Uruguay</mat-option>
+                                        </mat-select>
+                                    </mat-form-field> <br />
+
+                                    <mat-form-field class="inputClass">
+                                        <mat-label>Current Country of Citizenship </mat-label>
+                                        <mat-select formControlName="countryCitizenship" required>
                                             <mat-option value="" selected="selected">(please select a country)</mat-option>
                                             <mat-option value="BZ">Belize</mat-option>
                                             <mat-option value="CL">Chile</mat-option>
@@ -146,7 +164,7 @@
                                         </mat-form-field> <br />
                                     </div>
 
-                                    <mat-label style="font-size:16px;">If you are a head pastor, what is your congregation size?</mat-label> <br />
+                                    <mat-label style="font-size:16px;">If you are a head pastor, how many congregation members does your church currently have? (Note: this only includes congregation members ages 18 and up)</mat-label> <br />
                                     <div style="padding-top:10px;">
                                         <mat-radio-group class="radioButtons" formControlName="churchSize" required>
                                             <mat-radio-button value="1 - 50 "> 1 - 50 </mat-radio-button><br />
@@ -170,25 +188,8 @@
                                     </mat-form-field> <br />
 
                                     <mat-form-field class="inputClass">
-                                        <mat-label>Country</mat-label>
-                                        <mat-select formControlName="countryTwo" required>
-                                            <mat-option value="" selected="selected">(please select a country)</mat-option>
-                                            <mat-option value="BZ">Belize</mat-option>
-                                            <mat-option value="CL">Chile</mat-option>
-                                            <mat-option value="DM">Dominica</mat-option>
-                                            <mat-option value="DO">Dominican Republic</mat-option>
-                                            <mat-option value="GY">Guyana</mat-option>
-                                            <mat-option value="NI">Nicaragua</mat-option>
-                                            <mat-option value="PA">Panama</mat-option>
-                                            <mat-option value="PE">Peru</mat-option>
-                                            <mat-option value="US">United States</mat-option>
-                                            <mat-option value="UY">Uruguay</mat-option>
-                                        </mat-select>
-                                    </mat-form-field> <br />
-
-                                    <mat-form-field class="inputClass">
-                                        <mat-label> City </mat-label>
-                                        <input matInput placeholder="Arlington / Town" formControlName="cityTwo" required>
+                                        <mat-label> Location of Current Church (City, Country) </mat-label>
+                                        <input matInput placeholder="(City, Country)" formControlName="ChurchLocation" required>
                                     </mat-form-field> <br />
 
                                     <mat-label style="font-size:16px;">How long (in years) have you been affiliated with your church?</mat-label> <br />
@@ -222,6 +223,26 @@
                             <mat-step [stepControl]="this.ordersService.form" label="Supplimental Information">
                                 <form [formGroup]="this.ordersService.form">
                                     <div style="padding-top:25px;"></div>
+
+                                    <mat-form-field class="inputClass">
+                                        <mat-label>Level of Proficiency in English</mat-label>
+                                        <mat-select formControlName="englishProficiency" required>
+                                            <mat-option value="Limited proficiency ">Limited proficiency </mat-option>
+                                            <mat-option value="Adiquate proficiency">Adiquate proficiency </mat-option>
+                                            <mat-option value="Professional proficiency">Professional proficiency</mat-option>
+                                        </mat-select>
+                                    </mat-form-field> <br />
+
+                                    <mat-form-field class="inputClass">
+                                        <mat-label> Other languages spoken fluently </mat-label>
+                                        <input matInput placeholder="Other languages spoken fluently" formControlName="otherLanguages" required>
+                                    </mat-form-field> <br />
+
+                                    <mat-form-field class="inputClass">
+                                        <mat-label> Phone Number (If outside the USA please provide your Whatsapp number) </mat-label>
+                                        <input matInput placeholder="Primary Phone Number (If outside the USA please provide your Whatsapp number)" formControlName="phoneNumber" required>
+                                    </mat-form-field> <br />
+
                                     <mat-form-field class="inputClass">
                                         <mat-label>Do you have consistent access to the internet?</mat-label>
                                         <mat-select formControlName="internetAccess" required>
@@ -237,7 +258,22 @@
                                             <mat-option value="No">No</mat-option>
                                         </mat-select>
 
-                                    </mat-form-field> <br /> <br />
+                                    </mat-form-field> <br />
+                                    <div *ngIf="this.ordersService.form.value.specialAccomidations == 'Yes'">
+                                        <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain Why we ask: “This is to ensure that we are able to provide an equal opportunity of learning for any and all applicants who are accepted, and for us to know how a student can be best accommodated if possible.”"
+                                            formControlName="specialAccomidationsExplain" required> </textarea>
+                                    </div>
+
+                                    <mat-form-field class="inputClass">
+                                        <mat-label>Have you ever been convicted for any criminal offenses?</mat-label>
+                                        <mat-select formControlName="previousConviction" required>
+                                            <mat-option value="Yes">Yes </mat-option>
+                                            <mat-option value="No">No</mat-option>
+                                        </mat-select>
+                                    </mat-form-field> <br />
+                                    <div *ngIf="this.ordersService.form.value.previousConviction == 'Yes'">
+                                        <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain" formControlName="previousConvictionExplain" required> </textarea>
+                                    </div> <br/>
 
                                     <mat-label>How and by whom/what did you hear about us (Please be specific)? </mat-label>
                                     <div>

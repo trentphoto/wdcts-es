@@ -25,7 +25,7 @@ export class PolicyService {
     addressOne: new FormControl(""),
     addressTwo: new FormControl(""),
     city: new FormControl(""),
-    zipCode: new FormControl(""),
+    state: new FormControl(""),
     country: new FormControl(""),
     churchAttendance: new FormControl(""),
     ChurchName: new FormControl(""),
@@ -33,13 +33,20 @@ export class PolicyService {
     churchSize: new FormControl(""),
     churchRole: new FormControl(""),
     countryTwo: new FormControl(""),
-    cityTwo: new FormControl(""),
+    ChurchLocation: new FormControl(""),
     attendanceLength: new FormControl(""),
     statementPurpose: new FormControl(""),
     internetAccess: new FormControl(""),
     refferencePoint: new FormControl(""),
     anyoneStudyingNow: new FormControl(""),
-    yearsOfBeingABeliever: new FormControl("")
+    yearsOfBeingABeliever: new FormControl(""),
+    previousConviction: new FormControl(""),
+    previousConvictionExplain: new FormControl(""),
+    specialAccomidationsExplain: new FormControl(""),
+    countryCitizenship: new FormControl(""),
+    englishProficiency: new FormControl(""),
+    otherLanguages: new FormControl(""),
+    phoneNumber: new FormControl("")
   });
 
 

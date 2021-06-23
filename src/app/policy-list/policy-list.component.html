@@ -164,7 +164,7 @@
 
                   </mat-form-field> <br />
                   <div *ngIf="this.ordersService.form.value.specialAccomidations == 'Yes'">
-                    <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain Why we ask: “This is to ensure that we are able to provide an equal opportunity of learning for any and all applicants who are accepted, and for us to know how a student can be best accommodated if possible.”"
+                    <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain. Why we ask: “This is to ensure that we are able to provide an equal opportunity of learning for any and all applicants who are accepted, and for us to know how a student can be best accommodated if possible.”"
                               formControlName="specialAccomidationsExplain" required> </textarea>
                   </div>
 
@@ -176,7 +176,7 @@
                     </mat-select>
                   </mat-form-field> <br />
                   <div *ngIf="this.ordersService.form.value.previousConviction == 'Yes'">
-                    <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain" formControlName="previousConvictionExplain" required> </textarea>
+                    <textarea class="col-6 " style="height: 100px;" placeholder="If yes please explain, " formControlName="previousConvictionExplain" required> </textarea>
                   </div> <br />
 
                   <div>
@@ -222,11 +222,8 @@
 
                     <h1> Current Church Information </h1>
                     <mat-form-field class="inputClass">
-                      <mat-label>With which denomination is your church affiliated? (e.g. Baptist, Presbyterian, Nondenominational, etc.) </mat-label>
-                      <mat-select formControlName="denomination" required>
-                        <mat-option value="Yes">Yes </mat-option>
-                        <mat-option value="No">No</mat-option>
-                      </mat-select>
+                      <mat-label>With which denomination is your church affiliated?  </mat-label>
+                      <input matInput placeholder="(e.g. Baptist, Presbyterian, Nondenominational, etc.)" formControlName="denomination" required>
                     </mat-form-field> <br />
 
                     <mat-form-field class="inputClass">

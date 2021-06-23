@@ -155,7 +155,7 @@
                     </mat-select>
                   </mat-form-field> <br />
 
-                  <mat-form-field class="inputClass">
+                  <mat-form-field style="width:550px;">
                     <mat-label>Are there any special accommodations that will be needed during the program?</mat-label>
                     <mat-select formControlName="specialAccomidations" required>
                       <mat-option value="Yes">Yes </mat-option>
@@ -189,7 +189,9 @@
 
                 <mat-step [stepControl]="this.ordersService.form" label="Faith and commitment">
                   <form [formGroup]="this.ordersService.form">
-                    <div style="padding-top:25px;"></div>
+                
+
+                    <h1> Current Church Information </h1>
 
                     <mat-form-field class="inputClass">
                       <mat-label>What is the name of your current church </mat-label>
@@ -220,7 +222,6 @@
                       </mat-radio-group> <br />
                     </div>
 
-                    <h1> Current Church Information </h1>
                     <mat-form-field class="inputClass">
                       <mat-label>With which denomination is your church affiliated?  </mat-label>
                       <input matInput placeholder="(e.g. Baptist, Presbyterian, Nondenominational, etc.)" formControlName="denomination" required>
@@ -253,7 +254,7 @@
                     </div>
                     <mat-label>
                       <mat-label>
-                        Please paste a Statement of Purpose (no less than 150 words) demonstrating your commitment to studying through the duration of the program along with your goals and purpose for studying with Washington D.C. Theological Seminary.
+                        Please paste a Statement of Purpose (minimum 150 words) demonstrating your commitment to studying through the duration of the program along with your goals and purpose for studying with Washington D.C. Theological Seminary.
                       </mat-label>
                       <br /> <br />
                       <div>
@@ -267,7 +268,7 @@
                     </div>
                   </form>
                 </mat-step>
-                <mat-step [stepControl]="this.ordersService.form" label="Supplimental Information">
+                <mat-step [stepControl]="this.ordersService.form" label="Supplemental Information">
                   <form [formGroup]="this.ordersService.form">
                     <div style="padding-top:25px;"></div>
 

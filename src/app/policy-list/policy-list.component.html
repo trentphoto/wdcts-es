@@ -180,7 +180,7 @@
                   </div> <br />
 
                   <div>
-                    <button mat-button matStepperNext>Next</button>
+                    <button mat-raised-button color="primary" matStepperNext>Next</button>
                   </div>
                 </form>
               </mat-step>
@@ -262,9 +262,9 @@
                       </div>
 
                     </mat-label>
-                    <div>
-                      <button mat-button matStepperPrevious>Back</button>
-                      <button mat-button matStepperNext>Next</button>
+                    <div class="mt-4">
+                      <button mat-button matStepperPrevious class="mr-3">Back</button>
+                      <button mat-raised-button color="primary" matStepperNext>Next</button>
                     </div>
                   </form>
                 </mat-step>
@@ -292,8 +292,8 @@
                     </div>
                     <br />
                     <div>
-                      <button mat-button matStepperPrevious>Back</button>
-                      <button mat-button matStepperNext>Next</button>
+                      <button mat-button matStepperPrevious class="mr-3">Back</button>
+                      <button mat-raised-button color="primary" matStepperNext>Next</button>
                     </div>
                   </form>
                 </mat-step>
@@ -307,8 +307,7 @@
                       in the Academic Catalog."
                     </p>
                     <mat-radio-button value="Agree"> Agree </mat-radio-button> <br /> <br />
-                    <button mat-button matStepperPrevious>Back</button>
-                    <a href="/thank-you" class="submitbutton" (click)="onSubmit()">Submit</a>
+                    <a mat-raised-button color="primary" href="/thank-you" class="submitbutton" (click)="onSubmit()">Submit</a>
                   </div>
                 </mat-step>
             </mat-horizontal-stepper>

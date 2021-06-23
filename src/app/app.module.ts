@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule } from "@angular/material/button";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatNativeDateModule } from '@angular/material/core';
@@ -43,6 +44,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     FormsModule,
     NgbModule,
     ReactiveFormsModule,
+    MatButtonModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,

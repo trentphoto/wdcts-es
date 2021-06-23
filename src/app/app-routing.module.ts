@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'home-page', component: AppComponent },
   { path: 'app-form', component: AppFormComponent },
   { path: 'stepper-form', component: TestStepperComponent },
-  { path: 'policy', component: PolicyListComponent },
+  { path: 'application-form', component: PolicyListComponent },
   { path: 'thank-you', component: ThankYouComponent }
 ];
 

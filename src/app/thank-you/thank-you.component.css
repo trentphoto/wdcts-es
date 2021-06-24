@@ -5,3 +5,8 @@
 .thank-you-logo {
     max-width: 120px;
 }
+
+.LottieWrap {
+    height: 300px;
+    transform: translateX(7px);
+}

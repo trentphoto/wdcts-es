@@ -27,7 +27,7 @@ export class PolicyService {
     city: new FormControl(""),
     state: new FormControl(""),
     country: new FormControl(""),
-    churchAttendance: new FormControl(""),
+    denomination: new FormControl(""),
     ChurchName: new FormControl(""),
     churchLeadership: new FormControl(""),
     churchSize: new FormControl(""),

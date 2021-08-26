@@ -15,8 +15,7 @@ export class PolicyListComponent implements OnInit {
   ngOnInit() { }
 
   isLinear = false;
-  ztsForm = []; 
-
+  ztsForm = [];
   addztsForm = form => this.ztsForm.push(form);
 
   onSubmit() {

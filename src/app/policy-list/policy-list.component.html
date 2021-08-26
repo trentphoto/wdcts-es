@@ -30,7 +30,8 @@
 
                   <mat-form-field class="inputClass">
                     <mat-label>Email</mat-label>
-                    <input matInput placeholder="Email" formControlName="email" required>
+                    <input matInput placeholder="Email" formControlName="email" type="email"  ngModel email="true"
+                    required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
@@ -104,8 +105,7 @@
 
                   <mat-form-field class="inputClass">
                     <mat-label> Phone Number (If outside the USA please provide your Whatsapp number) </mat-label>
-                    <input matInput placeholder="Pri
-                                         y Phone Number (If outside the USA please provide your Whatsapp number)" formControlName="phoneNumber" required>
+                    <input matInput placeholder="Primary Phone Number (If outside the USA please provide your Whatsapp number)" formControlName="phoneNumber" type="number" required>
                   </mat-form-field> <br />
 
                   <mat-form-field class="inputClass">
@@ -250,7 +250,7 @@
                       </mat-label>
                       <br /> <br />
                       <div>
-                        <textarea required class="col-12" style="height: 100px;" formControlName="statementPurpose"> </textarea>
+                        <textarea  class="col-12" style="height: 100px;" formControlName="statementPurpose" required> </textarea>
                       </div>
 
                     </mat-label>

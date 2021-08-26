@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\policy-list",
-    "\\src\\app\\test-stepper"
+    "\\src\\app\\policy-list"
   ],
-  "SelectedNode": "\\src\\app\\policy-list\\policy-list.component.html",
+  "SelectedNode": "\\src\\app\\policy-list\\policy-list.component.css",
   "PreviewInSolutionExplorer": false
 }

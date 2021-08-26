@@ -189,7 +189,7 @@
 
                 <mat-step [stepControl]="this.ordersService.form" label="Faith and commitment">
                   <form [formGroup]="this.ordersService.form">
-                
+
 
                     <h1> Current Church Information </h1>
 
@@ -209,18 +209,10 @@
                       </mat-select>
                     </mat-form-field> <br />
 
-                    <mat-label style="font-size:16px;">If you are a head pastor, how many congregation members does your church currently have? (Note: this only includes congregation members ages 18 and up)</mat-label> <br />
-                    <div style="padding-top:10px;">
-                      <mat-radio-group class="radioButtons" formControlName="churchSize" required>
-                        <mat-radio-button value="1 - 50 "> 1 - 50 </mat-radio-button><br />
-                        <mat-radio-button value="51 - 100 "> 51 - 100 </mat-radio-button> <br />
-                        <mat-radio-button value="100 - 200"> 100 - 200 </mat-radio-button> <br />
-                        <mat-radio-button value="200 - 300"> 200 - 300 </mat-radio-button> <br />
-                        <mat-radio-button value="300 - 400"> 300 - 400 </mat-radio-button> <br />
-                        <mat-radio-button value="More then 400"> More then 400 </mat-radio-button>
-
-                      </mat-radio-group> <br />
-                    </div>
+                    <mat-form-field class="inputClass">
+                      <mat-label>If you are a head pastor, how many congregation members does your church currently have? (Note: this only includes congregation members ages 18 and up) </mat-label>
+                      <input matInput placeholder="Church Size" formControlName="churchSize" required>
+                    </mat-form-field> <br />
 
                     <mat-form-field class="inputClass">
                       <mat-label>With which denomination is your church affiliated?  </mat-label>

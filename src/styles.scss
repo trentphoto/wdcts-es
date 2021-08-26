@@ -86,7 +86,7 @@ p.feature-p {
 .header {
     width: 100%;
     padding: 20px;
-    background: #1e255b;
+    background: #283663;
     color: white;
 }
 
@@ -122,4 +122,9 @@ p.feature-p {
 
 .development-navigation { // for dev environment
     display: none;
+}
+
+.WDCTS-button.mat-raised-button.mat-button-base.mat-primary {
+    background-color: #3a4b83;
+    color: white;
 }

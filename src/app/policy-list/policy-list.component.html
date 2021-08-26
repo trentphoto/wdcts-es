@@ -52,6 +52,7 @@
                     <mat-label>Current Country of Residence</mat-label>
                     <mat-select formControlName="country" required>
                       <mat-option value="" selected="selected">(please select a country)</mat-option>
+                      <mat-option value="US">United States</mat-option>
                       <mat-option value="BZ">Belize</mat-option>
                       <mat-option value="CL">Chile</mat-option>
                       <mat-option value="DM">Dominica</mat-option>
@@ -60,7 +61,6 @@
                       <mat-option value="NI">Nicaragua</mat-option>
                       <mat-option value="PA">Panama</mat-option>
                       <mat-option value="PE">Peru</mat-option>
-                      <mat-option value="US">United States</mat-option>
                       <mat-option value="UY">Uruguay</mat-option>
                     </mat-select>
                   </mat-form-field> <br />
@@ -69,6 +69,7 @@
                     <mat-label>Current Country of Citizenship </mat-label>
                     <mat-select formControlName="countryCitizenship" required>
                       <mat-option value="" selected="selected">(please select a country)</mat-option>
+                      <mat-option value="US">United States</mat-option>
                       <mat-option value="BZ">Belize</mat-option>
                       <mat-option value="CL">Chile</mat-option>
                       <mat-option value="DM">Dominica</mat-option>
@@ -77,7 +78,6 @@
                       <mat-option value="NI">Nicaragua</mat-option>
                       <mat-option value="PA">Panama</mat-option>
                       <mat-option value="PE">Peru</mat-option>
-                      <mat-option value="US">United States</mat-option>
                       <mat-option value="UY">Uruguay</mat-option>
                     </mat-select>
                   </mat-form-field> <br />
@@ -180,7 +180,7 @@
                   </div> <br />
 
                   <div>
-                    <button mat-button matStepperNext>Next</button>
+                    <button mat-raised-button color="primary" matStepperNext>Next</button>
                   </div>
                 </form>
               </mat-step>
@@ -254,9 +254,9 @@
                       </div>
 
                     </mat-label>
-                    <div>
-                      <button mat-button matStepperPrevious>Back</button>
-                      <button mat-button matStepperNext>Next</button>
+                    <div class="mt-4">
+                      <button mat-button matStepperPrevious class="mr-3">Back</button>
+                      <button mat-raised-button color="primary" matStepperNext>Next</button>
                     </div>
                   </form>
                 </mat-step>
@@ -284,8 +284,8 @@
                     </div>
                     <br />
                     <div>
-                      <button mat-button matStepperPrevious>Back</button>
-                      <button mat-button matStepperNext>Next</button>
+                      <button mat-button matStepperPrevious class="mr-3">Back</button>
+                      <button mat-raised-button color="primary" matStepperNext>Next</button>
                     </div>
                   </form>
                 </mat-step>
@@ -299,8 +299,7 @@
                       in the Academic Catalog."
                     </p>
                     <mat-radio-button value="Agree"> Agree </mat-radio-button> <br /> <br />
-                    <button mat-button matStepperPrevious>Back</button>
-                    <a href="/thank-you" class="submitbutton" (click)="onSubmit()">Submit</a>
+                    <a mat-raised-button color="primary" routerLink="/thank-you" class="submitbutton" (click)="onSubmit()">Submit</a>
                   </div>
                 </mat-step>
             </mat-horizontal-stepper>

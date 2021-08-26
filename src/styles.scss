@@ -78,6 +78,10 @@ p.feature-p {
     width: 20px;
 }
 
+.mat-button.mat-button-base, .mat-raised-button.mat-button-base {
+    padding: 5px 50px;
+}
+
 // Header component
 .header {
     width: 100%;
@@ -115,3 +119,7 @@ p.feature-p {
 }
 
 // end Header component
+
+.development-navigation { // for dev environment
+    display: none;
+}

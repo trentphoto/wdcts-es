@@ -231,7 +231,7 @@
 
                     <mat-form-field class="inputClass">
                       <mat-label>¿Con qué denominación está afiliada su iglesia?</mat-label>
-                      <input matInput placeholder="(e.g. Baptist, Presbyterian, Nondenominational, etc.)" formControlName="denomination" required>
+                      <input matInput placeholder="(p. ej. Baptist, Presbyterian, Nondenominational, etc.)" formControlName="denomination" required>
                     </mat-form-field> <br />
 
                     <mat-form-field class="inputClass">
@@ -239,26 +239,18 @@
                       <input matInput placeholder="(City, Country)" formControlName="ChurchLocation" required>
                     </mat-form-field> <br />
 
-                    <mat-label style="font-size:16px;">¿Cuánto tiempo (en años) ha estado afiliado a su iglesia?</mat-label> <br />
-                    <div style="padding-top:10px; padding-bottom:10px;">
-                      <mat-radio-group formControlName="attendanceLength" required>
-                        <mat-radio-button value="1"> 1 - 5 años </mat-radio-button><br />
-                        <mat-radio-button value="2"> 5 - 10 años </mat-radio-button> <br />
-                        <mat-radio-button value="3"> 10 - 15 años </mat-radio-button> <br />
-                        <mat-radio-button value="4"> 15 - 20 años </mat-radio-button> <br />
-                        <mat-radio-button value="5"> 20 - 25 años </mat-radio-button> <br />
-                        <mat-radio-button value="6"> More then 25 años </mat-radio-button>
+                    <mat-form-field class="inputClass">
+                      <mat-label>¿Cuánto tiempo (en años) ha estado afiliado a su iglesia?</mat-label>
+                      <input matInput placeholder="p. ej. 3 años" formControlName="attendanceLength" required>
+                    </mat-form-field> <br />
 
-                      </mat-radio-group> <br />
-
-                      <div style="padding-bottom:10px;">
-                        <mat-form-field class="inputClass">
-                          <mat-label>¿Cuánto tiempo ha sido creyente?</mat-label>
-                          <input matInput placeholder="Years" formControlName="yearsOfBeingABeliever" required>
-                        </mat-form-field> <br />
-                      </div>
-
+                    <div style="padding-bottom:10px;">
+                      <mat-form-field class="inputClass">
+                        <mat-label>¿Cuánto tiempo ha sido creyente?</mat-label>
+                        <input matInput placeholder="Years" formControlName="yearsOfBeingABeliever" required>
+                      </mat-form-field> <br />
                     </div>
+
                     <mat-label>
                       <mat-label>
                         Por favor pegue una Declaración de propósito (mínimo 150 palabras) que demuestre su compromiso de estudiar durante la duración del programa junto con sus metas y propósito para estudiar con el Seminario Teológico de Washington D.C.
